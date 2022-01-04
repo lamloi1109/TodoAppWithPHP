@@ -7,6 +7,9 @@
     <title>TodoAppWithPHP</title>
 </head>
 <body>
-    <h1>Test php</h1>
+    <form action="" method="post">
+        <input type="text" name="todo_name" placeholder="Enter your todo">
+        <button>New Todo</button>
+    </form>
 </body>
 </html>
