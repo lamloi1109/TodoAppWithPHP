@@ -39,7 +39,7 @@
         const checkbox = document.querySelectorAll('input[type=checkbox]');
         checkbox.forEach((element) => { 
             element.onclick = function(){
-                // ~ Form.submit
+                // Form.submit
                 this.parentNode.submit();
             }
          } )

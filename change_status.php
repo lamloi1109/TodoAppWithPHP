@@ -4,7 +4,7 @@ $json = file_get_contents('./todo.json');
 $jsonArray = json_decode($json, true);
 // Lấy vè key
 $todoName = $_POST['todo_name'];
-// Dựa vào key để remove nó ra khỏi arr
+// Thay đổi trạng thái của completed true or false
 $jsonArray[$todoName]['completed'] = !$jsonArray[$todoName]['completed'];
 // Lưu arr vào file todo.json (ghi đè);
 file_put_contents('todo.json', json_encode($jsonArray, JSON_PRETTY_PRINT));
